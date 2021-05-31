@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_library"
+            android:title="@string/library" />
+        <item
+            android:id="@+id/nav_playlists"
+            android:title="@string/playlists"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_folders"
+            android:title="@string/folders"
+            android:checkable="false"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/nav_queue"
+            android:checkable="false"
+            android:title="@string/playing_queue" />
+        <item
+            android:id="@+id/nav_fav"
+            android:checkable="false"
+            android:title="@string/favorite" />
+        <item
+            android:id="@+id/nav_ignore"
+            android:title="Ignore"
+            android:checkable="false"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_sleep"
+            android:checkable="false"
+            android:title="Sleep Timer" />
+        <item
+            android:id="@+id/nav_nowplaying"
+            android:checkable="false"
+            android:title="@string/now_playing" />
+        <item
+            android:id="@+id/nav_equ"
+            android:checkable="false"
+            android:title="@string/equalizer" />
+        <item
+            android:id="@+id/nav_cutter"
+            android:checkable="false"
+            android:title="@string/mp3_cutter" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="none">
+
+
+        <item
+
+            android:id="@+id/nav_about"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/menu_rateus"
+            android:checked="false"
+            android:icon="@drawable/ic_star_rate_black_18dp"
+            android:title="@string/rate_us" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center_horizontal"
+        android:text="Set Ringtone"
+        android:textColor="#505659"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+        android:gravity="center_horizontal"
+        android:text="@string/set_your_desired_position"
+        android:textColor="#858585"
+        android:textSize="16sp" />
+
+
+    <com.whitebird.music.control.metrialRenge.RangeBar
+        android:id="@+id/rangebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80dp"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginLeft="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginRight="@dimen/dimen_20dp" />
+
+    <SeekBar
+        android:id="@+id/playerSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:maxHeight="2dp"
+        android:paddingTop="18dp"
+        android:progress="30"
+        android:progressDrawable="@drawable/seekbar_bg" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+     <TextView
+         android:id="@+id/song_duration"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:text="00:00"
+         android:layout_alignParentRight="true"
+         android:visibility="visible" />
+
+     <TextView
+         android:id="@+id/song_elapsed_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:text="00:00"
+         android:visibility="visible" />
+</RelativeLayout>
+    <com.whitebird.music.cutter.ringtone_lib.WaveformView
+        android:id="@+id/waveform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset">
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <com.whitebird.music.widgets.PlayPauseButton
+                android:id="@+id/playpause"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_20dp" />
+
+
+            <View
+                android:id="@+id/playpausewrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

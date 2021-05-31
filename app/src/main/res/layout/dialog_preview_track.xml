@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dimen_20dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/track_preview"
+        android:textColor="#505659"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+        android:gravity="center_horizontal"
+        android:text="@string/listen_to_10_seconds_song"
+        android:textColor="#858585"
+        android:textSize="16sp"/>
+
+
+
+
+
+    <SeekBar
+        android:id="@+id/playerSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxHeight="2dp"
+        android:paddingTop="10dp"
+        android:progress="30"
+        android:tag="tint_accent_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset">
+
+        <TextView
+            android:id="@+id/startText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+            android:text="@string/stringValue40"
+            android:textColor="@color/new_gray_bg"/>
+
+        <TextView
+            android:id="@+id/endText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+            android:text="@string/stringValue92"
+            android:textColor="@color/new_gray_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset">
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <com.whitebird.music.widgets.PlayPauseButton
+                android:id="@+id/playpause"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:padding="@dimen/dimen_20dp"
+                android:layout_gravity="center" />
+
+
+            <View
+                android:id="@+id/playpausewrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

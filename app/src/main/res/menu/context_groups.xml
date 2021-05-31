@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/play"
+
+        android:title="Play"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/play_next"
+
+        android:title="Play next"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_to_queue"
+
+        android:title="Add To Queue"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_to_playlist"
+
+        android:title="Add To Playlist"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/share"
+
+        android:title="Share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete"
+
+        android:title="Delete"
+        app:showAsAction="never" />
+
+</menu>

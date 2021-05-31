@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/play"
+        android:title="Play"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/play_next"
+        android:title="Play next"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/add_to_queue"
+        android:title="Add To Queue"
+        app:showAsAction="never"/>
+
+
+
+    <item
+        android:id="@+id/popup_playlist_edit"
+        android:title="Edit"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/popup_playlist_delete"
+        android:title="@string/delete"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/popup_playlist_share"
+        android:title="@string/share"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/popup_playlist_clone"
+        android:title="@string/clone"
+        app:showAsAction="never"/>
+
+
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_to_queue"
+        android:title="@string/add_to_queue"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/play"
+        android:title="@string/play"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/detete"
+        android:title="@string/delete"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/merge"
+        android:title="@string/merge"
+        app:showAsAction="never"/>
+</menu>

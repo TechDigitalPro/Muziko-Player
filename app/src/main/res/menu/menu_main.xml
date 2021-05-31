@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_shuffle"
+        android:orderInCategory="10"
+        android:title="@string/action_shuffle_all"
+        app:showAsAction="never" />
+
+    <!--<item android:id="@+id/action_equalizer" android:title="@string/action_equalizer"
+        android:orderInCategory="100" app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="101"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_youtube_searched_for_white_24dp"
+        android:orderInCategory="1"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+    <!--   <item
+           android:id="@+id/player_search"
+           android:title="@string/search"
+           app:actionViewClass="android.support.v7.widget.SearchView"
+           app:showAsAction="always"/>-->
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="101"
+        android:title="Exit Application"
+        app:showAsAction="never" />
+</menu>

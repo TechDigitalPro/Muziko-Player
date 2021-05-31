@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "367762687557",
+    "firebase_url": "https://muziko-48de4.firebaseio.com",
+    "project_id": "muziko-48de4",
+    "storage_bucket": "muziko-48de4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367762687557:android:9ae669cc5cba6da4",
+        "android_client_info": {
+          "package_name": "com.whitebird.music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367762687557-36ht981iiu0cavt258li820o5fpmo25p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whitebird.music",
+            "certificate_hash": "56fa38f752462ddc7421df6a2b8c6354b6ce1773"
+          }
+        },
+        {
+          "client_id": "367762687557-tr531h8hd0e58oeqr5rqft98q9qvsd19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whitebird.music",
+            "certificate_hash": "a56a242f02633743690a7a92e1c3017b57c54243"
+          }
+        },
+        {
+          "client_id": "367762687557-o1lm2ucn79f2cif7gdqp85qoat7v10rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whitebird.music",
+            "certificate_hash": "4ed79305efcb3e362b2983ba8a79602ba17c1407"
+          }
+        },
+        {
+          "client_id": "367762687557-t7rtnpa9u3lueeefaukqlsc8vqsh043a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whitebird.music",
+            "certificate_hash": "ea72337c1259e8e2ce362090521bd108520b1e76"
+          }
+        },
+        {
+          "client_id": "367762687557-nootoa6u3ej2ovlhiga539qjjlv6844b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whitebird.music",
+            "certificate_hash": "36401c533c8acf73a4ccbb7f7e0cda8a6b1f2266"
+          }
+        },
+        {
+          "client_id": "367762687557-b6ngk061vknfcf0l1t890r9gfk0q6u02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whitebird.music",
+            "certificate_hash": "eba878d0464d6809b78d82a954f03df5a2f1cee6"
+          }
+        },
+        {
+          "client_id": "367762687557-urd3j7dp2qvuih8900gpfvn4u3m4cqh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr77nfF2wY0_faHpHX0_kZpC864pnbnV8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367762687557-urd3j7dp2qvuih8900gpfvn4u3m4cqh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

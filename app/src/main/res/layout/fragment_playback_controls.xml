@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/quick_controls_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/blurredAlbumart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44000000" />
+
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom"
+                android:orientation="vertical">
+
+
+                <com.whitebird.music.widgets.BaseRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/toolbar"
+                    android:fadeScrollbars="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <include layout="@layout/empty_view" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="top"
+                android:background="?attr/windowBackground">
+
+                <com.whitebird.music.widgets.SquareImageView
+                    android:id="@+id/album_art_nowplayingcard_open"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerCrop"
+                    android:src="@minmap/app_icon" />
+
+                <LinearLayout
+                    android:id="@+id/content_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/album_art_nowplayingcard_open"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <SeekBar
+                        android:id="@+id/song_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:maxHeight="5dp"
+                        android:progress="30"
+                        android:tag="tint_accent_color" />
+
+                    <TextView
+                        android:id="@+id/song_title"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="126dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/song_artist"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="126dp"
+                        android:ellipsize="end"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/next">
+
+                    <com.whitebird.music.widgets.PlayPauseButton
+                        android:id="@+id/playpause"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center" />
+
+                    <View
+                        android:id="@+id/playpausewrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless" />
+
+                </FrameLayout>
+
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:id="@+id/next"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/list_open"
+                    android:layout_weight="0.7"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingRight="0dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_queue_open_bar"
+                    app:materialIcon="fast_forward"
+                    app:materialIconColor="#000"
+                    app:materialIconSize="30dp" />
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:id="@+id/list_open"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.7"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingRight="0dp"
+                    android:scaleType="center"
+                    app:materialIcon="menu"
+                    app:materialIconColor="#fff"
+                    app:materialIconSize="25dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>-->
+
+         <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal|center_vertical"
+              android:gravity="center_horizontal|center_vertical"
+              android:orientation="vertical"
+              android:paddingLeft="30dp"
+              android:paddingRight="30dp"
+              android:paddingTop="20dp">
+
+              <TextView
+                  android:id="@+id/song_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:ellipsize="end"
+                  android:maxLines="2"
+                  android:textColor="#ffffff"
+                  android:textSize="25sp" />
+
+              <TextView
+                  android:id="@+id/song_artist"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:ellipsize="end"
+                  android:maxLines="1"
+                  android:paddingTop="3dp"
+                  android:textColor="#ffffff"
+                  android:textSize="14sp" />
+
+              <SeekBar
+                  android:id="@+id/song_progress"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginLeft="6dp"
+                  android:layout_marginRight="6dp"
+                  android:maxHeight="2dp"
+                  android:paddingTop="18dp"
+                  android:progress="30"
+                  android:progressDrawable="@drawable/seekbar_bg" />
+
+
+              <TextView
+                  android:id="@+id/song_album"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#ffffff"
+                  android:visibility="gone" />
+
+              <TextView
+                  android:id="@+id/song_duration"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#ffffff"
+                  android:visibility="gone" />
+
+              <TextView
+                  android:id="@+id/song_elapsed_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#ffffff"
+                  android:visibility="gone" />
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:orientation="horizontal"
+                  android:paddingTop="20dp">
+
+                  <net.steamcrafted.materialiconlib.MaterialIconView
+                      android:id="@+id/previous"
+                      android:layout_width="48dp"
+                      android:layout_height="48dp"
+                      android:layout_weight="0.7"
+                      android:background="?attr/selectableItemBackgroundBorderless"
+                      android:paddingRight="50dp"
+                      android:scaleType="center"
+                      android:rotation="180"
+                      app:materialIcon="fast_forward"
+                      app:materialIconColor="#fff"
+                      app:materialIconSize="35dp" />
+
+                  <FrameLayout
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="5dp"
+                      android:layout_weight="1">
+
+                      <com.whitebird.music.widgets.PlayPauseButton
+                          android:id="@+id/playpause"
+                          android:layout_width="23dp"
+                          android:layout_height="23dp"
+                          android:layout_gravity="center" />
+
+                      <View
+                          android:id="@+id/playpausewrapper"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="?attr/selectableItemBackgroundBorderless" />
+
+                  </FrameLayout>
+
+                  <net.steamcrafted.materialiconlib.MaterialIconView
+                      android:id="@+id/next"
+                      android:layout_width="48dp"
+                      android:layout_height="48dp"
+                      android:layout_weight="0.7"
+                      android:background="?attr/selectableItemBackgroundBorderless"
+                      android:paddingRight="50dp"
+                      android:scaleType="center"
+                      app:materialIcon="fast_forward"
+                      app:materialIconColor="#fff"
+                      app:materialIconSize="35dp" />
+              </LinearLayout>
+
+          </LinearLayout>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/topContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="?attr/windowBackground">
+
+        <com.whitebird.music.widgets.SquareImageView
+            android:id="@+id/album_art_nowplayingcard"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/music_logo" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/album_art_nowplayingcard"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/song_progress_normal"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:maxHeight="5dp"
+                android:progress="30"
+                android:tag="tint_accent_color" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="136dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/artist"
+                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="136dp"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/next_close">
+
+            <com.whitebird.music.widgets.PlayPauseButton
+                android:id="@+id/play_pause"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center" />
+
+            <View
+                android:id="@+id/play_pause_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+        </FrameLayout>
+
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/next_close"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/list"
+            android:layout_weight="0.7"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingRight="0dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_queue_open_bar"
+            app:materialIcon="fast_forward"
+            app:materialIconColor="#000"
+            app:materialIconSize="30dp" />
+
+        <ImageView
+            android:id="@+id/list"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.7"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingRight="0dp"
+            android:src="@drawable/ic_queue_open"
+            android:scaleType="center"
+             />
+
+    </RelativeLayout>
+
+
+     <!--<include layout="@layout/bottom_nowplaying_card" /> -->
+
+
+</FrameLayout>
+
+

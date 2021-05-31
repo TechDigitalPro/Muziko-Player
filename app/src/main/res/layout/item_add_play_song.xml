@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main"
+    xmlns:vumeter="http://schemas.android.com/tools"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/music_logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_select"
+            android:layout_toRightOf="@+id/albumArt"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp">
+
+
+            <TextView
+                android:id="@+id/song_title"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/song_artist"
+                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="3dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <com.whitebird.music.widgets.VuMeterView
+            android:id="@+id/visualizer"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_select"
+            vumeter:vumeter_backgroundColor="@color/normal_blue"
+            vumeter:vumeter_blockNumber="3"
+            vumeter:vumeter_blockSpacing="3dp"
+            vumeter:vumeter_speed="15"
+            android:visibility="gone"
+            vumeter:vumeter_startOff="false"
+            vumeter:vumeter_stopSize="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/img_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_check_blue" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorPrimary">
+    </View>
+</FrameLayout>

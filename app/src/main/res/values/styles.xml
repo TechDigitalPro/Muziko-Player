@@ -1,0 +1,275 @@
+<resources>
+
+    <attr format="reference" name="cardStyle"/>
+    <attr format="reference" name="accentColor"/>
+    <attr format="reference" name="iconColor"/>
+    <attr format="reference" name="windowBackground"/>
+    <attr format="reference" name="progressBackgroundColor"/>
+    <attr format="reference" name="progressDrawable"/>
+    <attr format="reference" name="progressDrawableWithBackground" />
+    <attr format="reference" name="stateSelector" />
+
+
+    <style name="ThemeBaseLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="cardStyle">@style/CardViewStyle.Light</item>
+        <item name="accentColor">@color/colorAccent</item>
+        <item name="iconColor">@android:color/black</item>
+
+        <item name="actionModeBackground">@color/white</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <item name="windowBackground">@color/window_background</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="stateSelector">@color/colorAccent</item>
+
+        <item name="actionModeStyle">@style/ActionModeStyle</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+     <!--   <item name="actionModeBackground">@color/normal_blue</item>
+        <item name="actionBarPopupTheme">@style/ActionModeOverflowMenu</item>-->
+
+        <item name="progressBackgroundColor">@color/progressBackgroundColorLight</item>
+        <item name="progressDrawable">@drawable/progress_drawable</item>
+        <item name="progressDrawableWithBackground">@drawable/progress_drawable_withbackground</item>
+        <item name="ate_key">light_theme</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="ActionModeStyle" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/colorPrimary</item>
+        <item name="titleTextStyle">@style/ActionModeTitleTextStyle</item>
+    </style>
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/black_effective</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Button.Primary" parent="Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_primary_bg</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textColor">@color/black_effective</item>
+    </style>
+    <style name="ActionModeTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ActionModeOverflowMenu" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@color/white</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ThemeBaseDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkTheme</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDarkTheme</item>
+        <item name="colorAccent">@color/colorAccentDarkTheme</item>
+        <item name="android:windowBackground">@color/window_background_dark</item>
+        <item name="cardStyle">@style/CardViewStyle.Dark</item>
+        <item name="accentColor">@color/colorAccentDarkTheme</item>
+        <item name="iconColor">@android:color/white</item>
+        <item name="windowBackground">@color/window_background_dark</item>
+        <item name="stateSelector">@color/state_selector_dark</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorDark</item>
+        <item name="progressDrawable">@drawable/progress_drawable_dark</item>
+        <item name="progressDrawableWithBackground">@drawable/progress_drawable_withbackground_dark</item>
+        <item name="ate_key">dark_theme</item>
+
+    </style>
+
+    <style name="myclosebutton" parent="Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:tint">#fff</item> <!-- whatever color -->
+    </style>
+    <style name="ThemeBaseBlack" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="android:windowBackground">@color/window_background_black</item>
+        <item name="cardStyle">@style/CardViewStyle.Black</item>
+        <item name="accentColor">@color/colorAccentBlack</item>
+        <item name="iconColor">@android:color/white</item>
+        <item name="windowBackground">@color/window_background_black</item>
+        <item name="stateSelector">@color/state_selector_black</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorDark</item>
+        <item name="progressDrawable">@drawable/progress_drawable_black</item>
+        <item name="progressDrawableWithBackground">@drawable/progress_drawable_withbackground_black</item>
+
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppThemeLight" parent="ThemeBaseLight">
+    </style>
+
+    <style name="AppThemeNormalLight" parent="ThemeBaseLight">
+    </style>
+
+    <style name="AppTheme.FullScreen.Light" parent="ThemeBaseLight">
+    </style>
+
+    <style name="AppThemeDark" parent="ThemeBaseDark">
+
+
+    </style>
+
+    <style name="AppThemeNormalDark" parent="ThemeBaseDark">
+
+    </style>
+
+    <style name="AppTheme.FullScreen.Dark" parent="ThemeBaseDark">
+
+    </style>
+    <style name="AppThemeBlack" parent="ThemeBaseBlack">
+
+
+    </style>
+
+    <style name="AppThemeNormalBlack" parent="ThemeBaseBlack">
+
+    </style>
+
+    <style name="AppTheme.FullScreen.Black" parent="ThemeBaseBlack">
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+
+    <style name="TextApperance.Album.Title" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textSize">29sp</item>
+    </style>
+
+    <style name="TextApperance.Artist.Title" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textSize">29sp</item>
+    </style>
+
+    <style name="TextAppearance.Song.Lyrics" parent="@style/TextAppearance.AppCompat.Medium">
+    </style>
+
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00666666</item>
+    </style>
+
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="CardViewStyle.Light" parent="CardView">
+        <item name="cardBackgroundColor">@color/window_background</item>
+    </style>
+
+    <style name="CardViewStyle.Dark" parent="CardView">
+        <item name="cardBackgroundColor">@color/window_background_dark</item>
+    </style>
+
+    <style name="CardViewStyle.Black" parent="CardView">
+        <item name="cardBackgroundColor">@color/window_background_black</item>
+    </style>
+    <style name="Theme.Phonograph.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="Theme.Phonograph.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+<!--
+    <style name="CustomCastMiniController" parent="CastMiniController">
+        <item name="castShowImageThumbnail">true</item>
+        <item name="castTitleTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="castSubtitleTextAppearance">@style/TextAppearance.AppCompat.Caption</item>
+    </style>
+
+    <style name="CustomCastExpandedController" parent="CastExpandedController">
+        <item name="castControlButtons">
+            @array/cast_expanded_controller_control_buttons
+        </item>
+    </style>
+
+    <style name="AppTheme.ExpandedCastController" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="castExpandedControllerStyle">@style/CustomCastExpandedController</item>
+        <item name="castExpandedControllerToolbarStyle">
+            @style/ThemeOverlay.AppCompat.Dark.ActionBar
+        </item>
+    </style>-->
+    <style name="LightCheckBoxStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/normal_blue</item>
+        <item name="colorControlActivated">@color/normal_blue</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeBaseLight">
+        <item name="android:colorBackground">@color/normal_blue</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="ThemeBaseLight">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="QueueToolbarStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/light_gray</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+    </style>
+    <style name="AppTheme.Base.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="toolbarText" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="CustomSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#FFFFFF</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#565656</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#383838</item>
+    </style>
+</resources>
